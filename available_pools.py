@@ -134,3 +134,4 @@ def get_available_pools(token0, token1):
         row['locked1_in_USD'] = [amount1 * price_usd1]
         df = df.append(row)
     df.to_csv("pools.csv", index=False)
+    return df
